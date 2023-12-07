@@ -1,0 +1,175 @@
+<!DOCTYPE HTML> 
+<HTML lang="hu">
+
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Szedahelyi Anna Mária">
+<meta name="copyright" content="Tanulási célra">
+<meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+<meta name="description" content="Virágokkal foglalkozó weboldal">
+<link rel="stylesheet" href="stilus.css">
+<link rel="icon" href="kepek/favicon.png" type="image/x-icon">
+<title>Virágaink - Főoldal</title>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery-vaidation-1.19.5/dist/jquery.validate.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $("#myform").validate({
+        rules: {
+            nev: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            mobil: {
+                required: true,
+                minlength: 11,
+            },
+            jelszo: {
+                required: true,
+                minlength: 12,
+            },
+        },
+        messages: {
+            nev: "Kérlek, add meg a neved/felhasználóneved!",
+            email: {
+                required: "Kérlek, add meg az e-mail címedet!",
+                email: "Kérlek, létező e-mail címet adj meg!"
+                },
+            mobil: "Kérlek, add meg a telefonszámodat!",
+            jelszo: {
+                required: "Kérlek, add meg a jelszavad!",
+                minlength: "A jelszó minimum 12 karakterből kell, hogy álljon!"
+            }
+            el: "Kérlek, fogadd el a feltételeinket!",
+        },
+    });
+    });
+</script>
+
+<style>
+    label.error {
+        color: #c64525;
+    }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+</head>
+ 
+<body> 
+	<header class="oldal">        
+        <h1>Virágaink</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="kisokos.html">Kisokos</a></li>
+                <li><a href="kepek.html">Képgaléria</a></li>
+                <li id="current"><a href="#">Játék</a></li>
+                <li><a href="workshop.html">Workshop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="oldal">
+        <article class="kviz">
+        <form id="myform" method="post" action="http://szamtud.uni-corvinus.hu/receive.php" novalidate>
+            <p>
+                <h2>Adataid:</h2><br>
+                <label>
+                    <em>Felhasználónév:</em> <input type="text" name="nev" size="15" maxlength="20" id="nev">
+                </label>
+                <br>
+                <label>
+                    <em>Email cím:</em><input type="email" name="email" id="email">
+                </label>
+                <br>
+                <label>
+                    <em>Jelszó:</em> <input type="password" name="jelszo" id="jelszo">
+                </label>
+                <br>
+                <label>
+                    <em>Név:</em> <input type="text" name="nev" size="25" maxlength="50" id="nev">
+                </label>
+                <br>
+                <label>
+                    <em>Telefonszám:</em> <input type="tel" name="mobil" value="+36" size="14" maxlength="14" id="telszam">
+                </label>
+                <br>
+                
+                <label>
+                    <input type="checkbox" name="level" value="igen" checked> <em>Feliratkozom a heti hírlevélre</em><br>
+                    <input type="checkbox" name="el" value="igen" checked> <em>Elfogadom a felhasználási feltételeket és az adatkezelési szabályzatot</em>
+                </label>
+               
+            </p>
+            <strong>1. Melyik képen található a közönséges verbena?</strong><br><br>
+         
+                <div class="lehetosegek">
+                    <figure>
+                        <label><img src="fotok/kep1.jpg" alt="verb">
+                            <input type="radio" name="vir" id="verb"></label>
+                    </figure>
+                    <figure>
+                        <label><img src="kepek/aranyvesszo.jpg" alt="csok">
+                            <input type="radio" name="vir" id="csok"></label>
+                    </figure>
+                </div>
+                <br><br><br>
+
+            <label><strong>2. Mikor van Tavaszi Virágkötészet Műhely első alkalmai 2024-ben?</strong>
+                <br> <input type="date" name="datum" id="datum"></label>
+            <br><br><br>
+
+            <strong>3. Mely workshopokat szervezzük meg az idei évben?</strong><br>
+                    <label><input type="checkbox" name="tavaszi" value="igen" id="tavaszi">Tavaszi Virágkötészet Műhely</label> <br>
+                    <label><input type="checkbox" name="oszi" value="igen" id="oszi">Őszi Díszítő Workshop</label> <br>
+                    <label><input type="checkbox" name="eszaki" value="igen" id="eszaki">Északi Stílus Növényei</label> <br>
+                    <label><input type="checkbox" name="diszitsd" value="igen" id="diszitsd">Díszítsd magad! - Virágdíszítő Vetélkedő</label> <br>
+                    <label><input type="checkbox" name="vintage" value="igen" id="vintage">Vintage Virágdekoráció Workshop</label> <br>
+                    <label><input type="checkbox" name="terr" value="igen" id="terr">Modern Terrárium és Szobanövény Műhely</label> <br>
+                    <label><input type="checkbox" name="ballagasi" value="igen" id="ballagasi">Ballagási Csokrok Műhelye</label> <br><br><br>
+
+            <label><strong>4. Az aranyvessző tudományos neve melyik latin szóból ered? Írd be!</strong><br>
+                <input type="text" list="pelda" name="iro" id="egy" placeholder="Extra segítség a legördülő nyíl!" autofocus></label>
+                <datalist id="pelda">
+                    <option value="malignus">
+                    <option value="solidus">
+                    <option value="dcennium">
+                    <option value="vagabundus">
+                </datalist>
+                <br><br><br>
+
+            <strong>5. Mi a Ruscus aculeatus közönséges elnevezése?</strong><br>
+            <label><input type="radio" name="ruscus" value="rus1" id="jo">Kecskerágó</label><br>
+            <label><input type="radio" name="ruscus" value="rus2">Rózsa</label><br>
+            <label><input type="radio" name="ruscus" value="rus3">Lángvirág</label><br>
+            <label><input type="radio" name="ruscus" value="rus4">Liliom</label><br><br><br>
+
+            <strong>6. Szükséges-e előzetes tudás a kurzusokon való részvételhez?</strong><br>
+            <label><input type="radio" name="valaszt" value="val1">Igen</label><br>
+            <label><input type="radio" name="valaszt" value="val2" id="helyes">Nem</label><br> <br><br>
+
+            <p>
+                <input type="submit" value="Beküldés" class="gomb"  id="mybutton">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Visszaállítás" class="gomb"><br>
+            </p>
+
+        </form>
+    </article>
+
+
+    </div>
+
+
+    <footer class="oldal">
+        <p><em>Kizárólag oktatási célokat szolgál</em></p>
+        <p><em>2023</em></p>
+        <p><em>Szerdahelyi Anna Mária</em></p>
+    </footer>
+
+    <script src="ellenorzes.js"></script>
+    
+
+</body> 
+</HTML> 

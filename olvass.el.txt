@@ -1,0 +1,15 @@
+1. Készítette: Szedahelyi Anna Mária
+2. URL: 
+3. Leírás: A weboldal különböző virágokkal foglalkozik, elhelyeztem rajta egy virágkisokost, képgalériákat, játékot és workshop felületet. A virágkisokosban betűrendben találhatók meg a növények, a felületén ( és a workshopén is) tartalomjegyzék segíti a tájékozódást.
+4. JS:
+	kviz.html oldalon: kiértékeli a beküldött válaszokat és visszajelez, ha a kitöltő elért minimum 3 pontot.
+	kepek.html oldalon: figyelmeztető szöveget ír ki az oldal betöltödésekor a telefonos használatra vonatkozóan
+5. Az oldalon található szövegeket ChatGPT segítségével generáltam, néhol bele is módosítottam az általa adott válaszokba. 
+6. A képek forrása: https://hu.pinterest.com
+7. Kanit elnevezésű google fontot (https://fonts.googleapis.com/css2?family=Kanit&display=swap) használtam a következő helyeken:
+	header
+	header h1
+	h2
+
+
+(Megjegyzés: Az ellenorzes.js fájl ma (2023. 12. 07.) reggelig tökéletesen működött, azonban reggel az utolsó ellenőrzéskor már nem futott le sem a kepek.html, sem a kviz.html oldalon. Órákon át tartó hibakeresés után sem találtam meg az elkövetett hibámat, szóval a közeli határidőt tekintve leadom hibásan.)

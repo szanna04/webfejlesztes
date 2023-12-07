@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin:0;
+    padding:0; 
+    scroll-behavior: smooth;
+}
+
+body {
+    margin:0px; 
+    padding:0px;
+    background-color: #f5e6e8;
+}
+
+.oldal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ 
+.oldal>* {
+    margin: 0;
+    height:fit-content;
+}
+
+p {
+    padding:10px;
+}
+
+/*menüsor*/
+header {
+    padding: 2px;
+    margin: 0px;
+    background-image: url("kepek/fej.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-bottom:5px solid #511920;
+    text-align: center;
+    font-size: 1.5em;
+    color: #000000;
+    font-family: 'Kanit', sans-serif;
+}
+
+header h1 {
+    padding: 10px 0;
+    flex: 100%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: normal;
+}
+
+nav {
+    flex: 1 1 95%;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none; 
+    margin:0; 
+    padding:0;}
+
+nav li a {
+    display: block;
+    padding: 8px;
+    margin: 5px 7px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #e0c5c9;
+    border-radius: 1px;
+    text-align: center;
+    }
+
+nav li a:hover, #current a:hover {
+    background-color: #c69fa4; 
+    color:#000000;
+}
+
+li#current a {
+    background-color:#511920; 
+    color:#ffffff; 
+    border-radius: 20px; 
+}
+
+a {
+    color:#000000;
+}
+
+/*főoldal*/
+article.izelito, article.focim, article.leiras {
+    background-color: #e0c5c9; 
+    border-radius: 10px; 
+    text-align: justify;
+}
+
+div.bemutatkozas{
+    text-align: center;
+}
+
+ul.kozep {
+    list-style-position: inside;
+    text-align: center;
+}
+
+article.focim {
+    margin: 50px 0 15px 0; 
+    flex-basis: 95%;
+    text-align: center;
+}
+
+div.bemutatkozas {
+    flex-basis: 90%;
+    margin: 10px;
+}
+
+article.izelito {
+    flex-basis: 95%;
+    margin: 10px 10px 30px 10px;
+}
+
+article.izelito p{
+    margin: 5px;
+    font-style: italic;
+}
+
+img.fokep {
+    float:left;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+a:link.folink {
+    text-decoration: none;
+}
+
+article:hover.izelito {
+    transform: scale(1.15);
+}
+
+h2 {
+    margin: 20px; 
+    font-family: 'Kanit', 
+    sans-serif;
+}
+
+/*kisokos*/
+img.kep {
+    height: 330px;
+    float:right;
+    border-radius: 10px;
+}
+
+img:hover.kep {
+    transform: scale(1.15);
+}
+
+.tartalom {
+    margin:10px 10px 10px 10px;
+    padding:0;
+    text-align: center;
+}
+
+.tartalom ul {
+    padding-right: 10px; 
+    list-style-type: none;
+}
+
+ul.tartalom2 li a {
+    display: block;
+    padding: 8px;
+    margin: 5px 7px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #511920;
+    border-radius: 10px;
+    text-align: center;
+    list-style-type: none;
+}
+
+ul.tartalom2 li a:hover {
+    background-color: #c69fa4;
+}
+
+/*galéria*/
+td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.viz{
+    overflow-x: auto;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.galleria-container {
+    margin:auto;
+}
+
+/*kvíz*/
+article.kviz{
+    text-align: center;
+}
+
+div.lehetosegek{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.lehetosegek figure img{
+    border-radius: 10px;
+}
+
+div.lehetosegek figure{
+    padding: 0px;
+    margin: 0px;
+}
+
+input {
+    border-radius: 5px; 
+    padding: 2px 5px; 
+    margin: 3px; 
+    background-color: #e0c5c9;
+}
+
+input#egy, input#jo, input#datum {
+    margin-bottom: 30px;
+}
+
+label.error {
+    color: #c64525;
+}
+
+/*workshop*/
+ol.kozep2 {
+    list-style-position: inside;
+    text-align: center;
+}
+
+li.osztaly {
+    font-size: medium;
+    font-weight: bolder;
+}
+
+h3 {
+    margin: 30px 10px;
+}
+
+article.leiras {
+    margin:10px;
+    text-align: justify;
+}
+
+hr {
+    height: 0; 
+    width: 100%; 
+    background-color: #511920; 
+    margin: 20px 0;
+}
+
+figure {margin: 0;
+    padding: 10px 0 50px 0;
+    align-items: center;
+}
+
+/*lábléc*/
+footer {
+    padding: 2px 2px 12px 2px;
+    margin: 0;
+    background-image: url("kepek/fej.jpg"); background-size: cover; border-top:5px solid #511920;
+    text-align: center;
+    text-align: center;
+    color: #000000;
+
+}
+
+/*reszponzivitás*/
+@media all and (min-width: 600px) {
+    nav {
+        flex-basis: 20%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    article {
+        flex-basis: 70%;
+    }
+    article.izelito {
+        flex-basis: 70%;
+    }
+    article.focim {
+        flex-basis: 70%;
+    }
+    article.leiras {
+        flex-basis: 60%;
+    }
+    div.bemutatkozas {
+        flex-basis:50%;
+    }
+    div.lehetosegek{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media all and (min-width: 768px) {
+    nav {
+        flex-basis: 20%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    article {
+        flex-basis: 70%;
+    }
+    article.izelito {
+        flex-basis: 55%;
+    }
+    article.focim {
+        flex-basis: 68%;
+    }
+    article.leiras {
+        flex-basis: 70%;
+    }
+    div.bemutatkozas {
+        flex-basis:68%;
+    }
+    section.tartalom {
+        flex-basis: 40%;
+    }
+    article.tartalom {
+        flex-basis: 70%;
+    }
+    figure {
+        flex-basis: 10%;
+    }
+}

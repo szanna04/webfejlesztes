@@ -1,0 +1,105 @@
+<!DOCTYPE HTML> 
+<HTML lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Szedahelyi Anna Mária">
+    <meta name="copyright" content="Tanulási célra">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+    <meta name="description" content="Virágokkal foglalkozó weboldal">
+    <link rel="stylesheet" href="stilus.css">
+    <link rel="icon" href="kepek/favicon.png" type="image/x-icon">
+    <title>Virágaink - Főoldal</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <script src="jquery-3.7.1.min.js"></script> 
+    <script src="galleria-1.6.1/dist/galleria.min.js"></script>
+    <script src="galleria-1.6.1/dist/themes/classic/galleria.classic.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('#images1').galleria({
+    width:500,
+    height:500
+    });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('#images2').galleria({
+    width:500,
+    height:500
+    });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('#images3').galleria({
+    width:500,
+    height:500
+    });
+    });
+</script>
+
+<style>
+    .galleria-container {margin:auto;
+    background-color: #f5e6e8;}
+</style>
+    
+
+</head>
+ 
+<body>
+
+    <header class="oldal">        
+        <h1>Virágaink</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="kisokos.html">Kisokos</a></li>
+                <li id="current"><a href="#">Képgaléria</a></li>
+                <li><a href="kviz.html">Játék</a></li>
+                <li><a href="workshop.html">Workshop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="viz">
+        <table>
+            <tr>
+                <td><h2>Növények</h2></td>
+                <td><h2>Workshopok</h2></td>
+                <td><h2>Dekorációs ötletek</h2></td>
+            </tr>
+            <tr>
+                <td><article id="images1">
+                    <img src="fotok/kep1.jpg" alt="Kép a lila színű közönséges verbenáról" title="Közönséges verbena">
+                    <img src="fotok/kep6.jpg" alt="Kép a különböző növényekről" title="Növények">
+                    </article></td>
+                <td><article id="images2">
+                    <img src="fotok/kep5.jpg" alt="Kép csoportfoglalkozásról" title="Csoportfoglalkozás">
+                    <img src="fotok/kep8.jpg" alt="Kép az egyik tavaszi workshopról" title="Workshop">
+                    <img src="fotok/kep11.jpg" alt="Kép a virágkötés folyamatáról" title="Virágkötés">
+                    <img src="fotok/kep10.jpg" alt="Kép az alkalom előkészületeiről" title="Előkészület">
+                    </article></td>
+                <td><article id="images3">
+                    <img src="fotok/kep2.jpg" alt="Kép egy labirintusról, amelyeket virággak díszítettek" title="Viráglabirintus">
+                    <img src="fotok/kep3.jpg" alt="Kép egy virággal futtatott kapuról" title="Virágkapu">
+                    <img src="fotok/kep4.jpg" alt="Kép egy kicsi virágoskertről egy ház előtt" title="Kert">
+                    <img src="fotok/kep8.jpg" alt="Kép egy sárga-fehér koncepciójú csokorról" title="Csokor">
+                    <img src="fotok/kep9.jpg" alt="Kép egy esküvői csokorról" title="Esküvői csokor">
+                    </article></td>
+            </tr>
+        </table>       
+    </div>
+
+
+    <footer class="oldal">
+        <p><em>Kizárólag oktatási célokat szolgál</em></p>
+        <p><em>2023</em></p>
+        <p><em>Szerdahelyi Anna Mária</em></p>
+    </footer>
+    <script src="ellenorzes.js"></script>
+</body> 
+</HTML> 
